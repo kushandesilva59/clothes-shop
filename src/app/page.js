@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Navbar from "./components/Navbar";
 import { useState } from "react";
+import HeroSection from "./components/HeroSection";
 
 export default function Home() {
 
@@ -10,8 +11,7 @@ export default function Home() {
 
   return (
     <div className="">
-      <Navbar />
-      
+      <HeroSection />
     </div>
   );
 }
