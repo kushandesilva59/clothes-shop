@@ -1,32 +1,51 @@
 'use client'
 import React, { useState } from 'react'
 import Link from "next/link";
+import { FaBars, FaSearch, FaShoppingBag, FaUser } from "react-icons/fa"; 
+import {  FiSearch, FiShoppingBag, FiUser } from "react-icons/fi"; 
 
+import { Petrona, Inter } from "next/font/google";
+
+const petrona = Petrona({
+  subsets: ["latin"],
+  weight: ["400", "700"], // Customize weights
+});
+
+const inter = Inter({
+  subsets: ["latin"], // Optional: Choose subsets
+  weight: ["400", "500", "700"], // Optional: Specify desired font weights
+});
 const Navbar = () => {
 
 
   
 
   return (
-    <nav className="">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
+    <nav className="relative w-full navbar">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
-          <div className="flex-shrink-0 mr-3">
-            <Link href="/" className="text-lg font-bold">
+          <div className="flex ">
+            <Link href="/" className={`${petrona.className} text-lg mr-4`}>
               BrandLogo
             </Link>
+            <FaBars
+              style={{
+                fontSize: "24px",
+                cursor: "pointer",
+                marginRight: "10px",
+              }}
+            />{" "}
           </div>
 
           {/* Navigation Links */}
-          <div className="hidden md:flex space-x-4">
+          <div
+            className={`${inter.className} hidden md:flex gap-12 space-x-10 `}
+          >
             <Link href="/" className="text-sm font-medium hover:text-gray-600">
               Home
             </Link>
-            <Link
-              href=""
-              className="text-sm font-medium hover:text-gray-600"
-            >
+            <Link href="" className="text-sm font-medium hover:text-gray-600">
               About
             </Link>
             <Link
@@ -44,7 +63,7 @@ const Navbar = () => {
           </div>
 
           {/* Search Box */}
-          <div className="flex-1 flex justify-center px-2 lg:ml-6">
+          {/* <div className="flex-1 flex justify-center px-2 lg:ml-6">
             <div className="max-w-lg w-full">
               <label htmlFor="search" className="sr-only">
                 Search
@@ -59,16 +78,43 @@ const Navbar = () => {
                 />
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Sign-In Button */}
-          <div className="flex items-center">
+          <div className="flex items-center gap-4">
             <Link
+              href="/contact"
+              className="text-sm font-medium hover:text-gray-600"
+            >
+              Become a Seller
+            </Link>
+            <FiSearch
+              style={{
+                fontSize: "24px",
+                cursor: "pointer",
+                marginRight: "10px",
+              }}
+            />{" "}
+            <FiShoppingBag
+              style={{
+                fontSize: "24px",
+                cursor: "pointer",
+                marginRight: "10px",
+              }}
+            />{" "}
+            <FiUser
+              style={{
+                fontSize: "24px",
+                cursor: "pointer",
+                marginRight: "10px",
+              }}
+            />{" "}
+            {/* <Link
               href="/signin"
               className="bg-blue-500 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-600"
             >
               Sign In
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>
