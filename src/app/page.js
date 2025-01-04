@@ -5,6 +5,7 @@ import { useState } from "react";
 import Products from "./components/products/Products";
 import HeroSection from "./components/HeroSection";
 import ServiceSection from "./components/ServiceSection/ServiceSection";
+import CollectionSection from "./components/CollectionSection/CollectionSection";
 
 export default function Home() {
 
@@ -15,6 +16,7 @@ export default function Home() {
     <div className="">
       <HeroSection />
       <ServiceSection />
+      <CollectionSection/>
     </div>
   );
 }

@@ -1,10 +1,18 @@
 import React from 'react'
 import styles from '../../styles/ServiceSection.module.css'
 
+import { Inter } from 'next/font/google';
+
+const inter = Inter({
+  subsets: ["latin"], // Optional: Choose subsets
+  weight: ["400", "500", "700"], // Optional: Specify desired font weights
+});
 
 const ServiceSection = () => {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 relative flex w-full justify-around">
+    <div
+      className={` max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 relative flex w-full justify-around ${inter.className}`}
+    >
       <div className={`${styles.serviceBox}`}>
         <img src="/delivery.png" alt="" />
         <p>Fast Delivery</p>
