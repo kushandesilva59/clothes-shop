@@ -1,0 +1,9 @@
+.serviceBox{
+    width: 210px;
+    height: 80px;
+    border-radius: 10px;
+    border: 1px solid #6D6F6F;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
