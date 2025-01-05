@@ -14,7 +14,7 @@ const HeroSection = () => {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 relative h-auto">
       <div className="relative justify-center items-center hero-section">
         <div className="relative">
-          <img src="/heroImage.png" alt="" width={"100%"} />
+          <img src="/hero.jpg" alt="" width={"100%"} />
         </div>
 
         <div

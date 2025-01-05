@@ -1,68 +1,54 @@
 import React from "react";
-
-import {Lato,Public_Sans} from 'next/font/google'
-import styles from '../../styles/CollectionSection.module.css'
-
+import Image from "next/image"; // Use Next.js Image component
+import { Lato, Public_Sans } from "next/font/google";
+import styles from "../../styles/CollectionSection.module.css";
 
 const lato = Lato({
-  subsets: ["latin"], // Choose subsets you need
-  weight: ["400", "700"], // Add desired font weights
-  style: ["normal", "italic"], // Add styles if needed
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  style: ["normal", "italic"],
 });
 
 const publicSans = Public_Sans({
-  subsets: ["latin"], // Add subsets as required
-  weight: ["300", "400", "500", "600", "700"], // Add desired weights
-  style: ["normal", "italic"], // Add styles if needed
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  style: ["normal", "italic"],
 });
+
+const collections = [
+  { src: "/collection1.png", label: "Women Fashion" },
+  { src: "/collection2.png", label: "Men Fashion" },
+  { src: "/collection3.png", label: "Mobile Phones" },
+  { src: "/collection4.png", label: "Airpods" },
+  { src: "/collection5.png", label: "Women Handbags" },
+  { src: "/collection6.png", label: "Headphones" },
+  { src: "/collection7.png", label: "Shoes" },
+  { src: "/collection8.png", label: "Watches" },
+  { src: "/collection9.png", label: "Cosmetics" },
+  { src: "/collection10.png", label: "Sunglasses" },
+];
 
 const CollectionSection = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 relative">
-      <h3 className={`${publicSans.className} ${styles.title}`}>Our Collections</h3>
+      <h3 className={`${publicSans.className} ${styles.title}`}>
+        Our Collections
+      </h3>
       <div
         className={`pt-6 grid grid-cols-5 grid-rows-2 justify-center gap-x-5 gap-y-10 ${lato.className}`}
       >
-        <div className="">
-          <img src="/collection1.png" alt="" />
-          <p className="text-center mt-3">Women Fashion</p>
-        </div>
-        <div>
-          <img src="/collection2.png" alt="" />
-          <p className="text-center mt-3">Men Fashion</p>
-        </div>
-        <div>
-          <img src="/collection3.png" alt="" />
-          <p className="text-center mt-3">Mobile Phones</p>
-        </div>
-        <div>
-          <img src="/collection4.png" alt="" />
-          <p className="text-center mt-3">Airpods</p>
-        </div>
-        <div>
-          <img src="/collection5.png" alt="" />
-          <p className="text-center mt-3">Women Handbags</p>
-        </div>
-        <div>
-          <img src="/collection6.png" alt="" />
-          <p className="text-center mt-3">Headphones</p>
-        </div>
-        <div>
-          <img src="/collection7.png" alt="" />
-          <p className="text-center mt-3">Shoes</p>
-        </div>
-        <div>
-          <img src="/collection8.png" alt="" />
-          <p className="text-center mt-3">Watches</p>
-        </div>
-        <div>
-          <img src="/collection9.png" alt="" />
-          <p className="text-center mt-3">Cosmetics</p>
-        </div>
-        <div>
-          <img src="/collection10.png" alt="" />
-          <p className="text-center mt-3">Sunglasses</p>
-        </div>
+        {collections.map((collection, index) => (
+          <div key={index}>
+            <Image
+              src={collection.src}
+              alt={collection.label}
+              width={220}
+              height={300}
+              className="mx-auto"
+            />
+            <p className="text-center mt-3">{collection.label}</p>
+          </div>
+        ))}
       </div>
     </div>
   );

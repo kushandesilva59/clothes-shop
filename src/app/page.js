@@ -6,6 +6,7 @@ import Products from "./components/products/Products";
 import HeroSection from "./components/HeroSection";
 import ServiceSection from "./components/ServiceSection/ServiceSection";
 import CollectionSection from "./components/CollectionSection/CollectionSection";
+import FeaturedCategoriesSection from "./components/FeaturedCategoriesSection/FeaturedCategoriesSection";
 
 export default function Home() {
 
@@ -17,6 +18,7 @@ export default function Home() {
       <HeroSection />
       <ServiceSection />
       <CollectionSection/>
+      <FeaturedCategoriesSection/>
     </div>
   );
 }
