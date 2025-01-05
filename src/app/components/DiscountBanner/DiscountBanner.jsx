@@ -13,7 +13,7 @@ const DiscountBanner = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative flex justify-center">
       <div
-        className={`flex items-center justify-between w-2/3 ${lato.className} ${styles.discountBox}`}
+        className={`flex items-center justify-between lg:w-2/3 w-3/4 ${lato.className} ${styles.discountBox}`}
       >
         <div>
           <Image
@@ -23,7 +23,7 @@ const DiscountBanner = () => {
             alt="discount_image"
           />
         </div>
-        <div className="flex flex-col items-start px-5">
+        <div className={`flex flex-col items-start px-5 ${styles.label}`}>
           <p className={styles.subtitle}>Limited offer</p>
           <h6 className={styles.title}>
             50% off only this week and get special gift

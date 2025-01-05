@@ -24,3 +24,25 @@
     padding: 10px;
     border-radius: 6px;
 }
+
+@media (max-width: 600px){
+
+    .label{
+        padding: 0 8px;
+    }
+
+    .title{
+        font-size: 8px;
+        line-height: 10px;
+        padding: 5px 0;
+    }
+
+    .subtitle{
+        font-size: 7px;
+    }
+
+    .button{
+        font-size: 7px;
+        padding: 5px;
+    }
+}
