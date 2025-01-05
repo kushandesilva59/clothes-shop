@@ -15,7 +15,7 @@ const FeaturedCategoriesSection = () => {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 relative py-20">
       <h3 className={`${styles.title} py-7`}>Featured Collections</h3>
 
-      <div className="flex justify-evenly">
+      <div className={`flex justify-evenly ${styles.featuredSection}`}>
         <div className="relative">
           <img src="/fashion.png" className="h-full" alt="" />
           <div className={`${styles.overlay}`}>Fashion</div>

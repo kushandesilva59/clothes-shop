@@ -16,3 +16,30 @@
   color: #2C3333;
   font-weight: 400;
 }
+
+@media (max-width: 600px){
+
+  .featuredSection{
+    gap: 2px;
+  }
+
+  .featuredSection .overlay{
+      font-size: 10px;
+      top: 5px;
+      left: 5px;
+  }
+
+  .featuredSection>div:nth-child(2){
+    gap: 2px;
+  }
+
+  .featuredSection>div:nth-child(2)>div{
+    gap: 2px;
+  }
+
+  .featuredSection img{
+    height: 100%;
+  }
+}
+
+
