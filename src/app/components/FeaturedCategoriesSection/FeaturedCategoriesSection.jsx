@@ -17,7 +17,7 @@ const FeaturedCategoriesSection = () => {
 
       <div className={`flex justify-evenly ${styles.featuredSection}`}>
         <div className="relative">
-          <img src="/fashion.png" className="h-full" alt="" />
+          <img src="/fashion.png" className="lg:h-full" alt="" />
           <div className={`${styles.overlay}`}>Fashion</div>
         </div>
 
