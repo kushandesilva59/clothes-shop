@@ -7,3 +7,24 @@
     align-items: center;
     justify-content: space-around;
 }
+
+@media (max-width: 600px) {
+
+    .serviceSection{
+        gap: 7px;
+    }
+
+    .serviceBox{
+        width: 150px;
+        flex-direction: column;
+    }
+
+    .serviceBox>img{
+        width: 30px;
+    }
+
+    .serviceBox>p{
+        font-size: 10px;
+        text-align: center;
+    }
+}

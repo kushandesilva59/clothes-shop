@@ -11,7 +11,7 @@ const inter = Inter({
 const ServiceSection = () => {
   return (
     <div
-      className={` max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 relative flex w-full justify-around ${inter.className}`}
+      className={` max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 relative flex w-full justify-around ${styles.serviceSection} ${inter.className}`}
     >
       <div className={`${styles.serviceBox}`}>
         <img src="/delivery.png" alt="" />
