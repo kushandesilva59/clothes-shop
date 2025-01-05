@@ -1,0 +1,26 @@
+.discountBox{
+    background-color: #2B3232;
+}
+
+.subtitle{
+    font-size: 15px;
+    font-weight: 500;
+    color: #ACAFAF;
+}
+
+.title{
+    font-size: 30px;
+    font-weight: 600;
+    color: #FFFF;
+    line-height: 36px;
+    padding: 10px 0 20px 0;
+}
+
+.button{
+    font-size: 18px;
+    font-weight: 600;
+    color: #FFFF;
+    border: 1px solid #FFFF;
+    padding: 10px;
+    border-radius: 6px;
+}

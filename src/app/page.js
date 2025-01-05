@@ -7,6 +7,7 @@ import HeroSection from "./components/HeroSection";
 import ServiceSection from "./components/ServiceSection/ServiceSection";
 import CollectionSection from "./components/CollectionSection/CollectionSection";
 import FeaturedCategoriesSection from "./components/FeaturedCategoriesSection/FeaturedCategoriesSection";
+import DiscountBanner from "./components/DiscountBanner/DiscountBanner";
 
 export default function Home() {
 
@@ -19,6 +20,7 @@ export default function Home() {
       <ServiceSection />
       <CollectionSection/>
       <FeaturedCategoriesSection/>
+      <DiscountBanner />
     </div>
   );
 }
