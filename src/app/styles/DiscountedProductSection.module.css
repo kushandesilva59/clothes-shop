@@ -1,0 +1,15 @@
+.discountLabel{
+    background-color: #2C3333;
+}
+
+.discountPrice{
+    font-weight: 600;
+    font-size: 15px;
+    color: #2C3333;
+}
+
+.originalPrice{
+color: #ACAFAF;
+text-decoration: line-through;
+font-size: 12px;
+}
