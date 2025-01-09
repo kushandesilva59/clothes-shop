@@ -38,6 +38,10 @@ const DiscountedProductSection = () => {
         spaceBetween={30}
         slidesPerView={5}
         breakpoints={{
+          0: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
           640: {
             slidesPerView: 2,
             spaceBetween: 20,
@@ -52,10 +56,6 @@ const DiscountedProductSection = () => {
             slidesPerView: 5,
             spaceBetween: 40,
           },
-          0: {
-            slidesPerView: 1,
-            spaceBetween: 10,
-          },
         }}
       >
         <SwiperSlide>
@@ -69,7 +69,7 @@ const DiscountedProductSection = () => {
               </div>
 
               <div
-                className={`flex justify-start pt-2 items-center gap-2 ${inter.className}`}
+                className={`flex justify-start pt-2 items-center gap-2 ${styles.discountPriceWrapper}  ${inter.className}`}
               >
                 <p className={styles.discountPrice}>LKR.10,141.29</p>
                 <p className={styles.originalPrice}>LKR.22,141.29</p>
@@ -88,7 +88,7 @@ const DiscountedProductSection = () => {
               </div>
 
               <div
-                className={`flex justify-start pt-2 items-center gap-2 ${inter.className}`}
+                className={`flex justify-start pt-2 items-center gap-2 ${styles.discountPriceWrapper} ${inter.className}`}
               >
                 <p className={styles.discountPrice}>LKR.10,141.29</p>
                 <p className={styles.originalPrice}>LKR.22,141.29</p>
@@ -107,7 +107,7 @@ const DiscountedProductSection = () => {
               </div>
 
               <div
-                className={`flex justify-start pt-2 items-center gap-2 ${inter.className}`}
+                className={`flex justify-start pt-2 items-center gap-2 ${styles.discountPriceWrapper} ${inter.className}`}
               >
                 <p className={styles.discountPrice}>LKR.10,141.29</p>
                 <p className={styles.originalPrice}>LKR.22,141.29</p>
@@ -126,7 +126,7 @@ const DiscountedProductSection = () => {
               </div>
 
               <div
-                className={`flex justify-start pt-2 items-center gap-2 ${inter.className}`}
+                className={`flex justify-start pt-2 items-center gap-2 ${styles.discountPriceWrapper} ${inter.className}`}
               >
                 <p className={styles.discountPrice}>LKR.10,141.29</p>
                 <p className={styles.originalPrice}>LKR.22,141.29</p>
@@ -145,7 +145,7 @@ const DiscountedProductSection = () => {
               </div>
 
               <div
-                className={`flex justify-start pt-2 items-center gap-2 ${inter.className}`}
+                className={`flex justify-start pt-2 items-center gap-2 ${styles.discountPriceWrapper} ${inter.className}`}
               >
                 <p className={styles.discountPrice}>LKR.10,141.29</p>
                 <p className={styles.originalPrice}>LKR.22,141.29</p>
@@ -164,7 +164,7 @@ const DiscountedProductSection = () => {
               </div>
 
               <div
-                className={`flex justify-start pt-2 items-center gap-2 ${inter.className}`}
+                className={`flex justify-start pt-2 items-center gap-2 ${styles.discountPriceWrapper} ${inter.className}`}
               >
                 <p className={styles.discountPrice}>LKR.10,141.29</p>
                 <p className={styles.originalPrice}>LKR.22,141.29</p>
