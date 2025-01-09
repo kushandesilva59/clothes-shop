@@ -1,6 +1,6 @@
 'use client'
 import React from "react";
-import { Swiper, SwiperSlide, Autoplay } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import styles from '../../styles/DiscountedProductSection.module.css'
 
@@ -61,7 +61,11 @@ const DiscountedProductSection = () => {
         <SwiperSlide>
           <div>
             <div className="relative">
-              <img src="/discount1.png" alt="Slide 3" />
+              <img
+                src="/discount1.png"
+                className={styles.image}
+                alt="Slide 3"
+              />
               <div
                 className={`absolute top-0 left-0 py-1 px-2 text-white rounded-md ${styles.discountLabel}`}
               >
@@ -80,7 +84,11 @@ const DiscountedProductSection = () => {
         <SwiperSlide>
           <div>
             <div className="relative">
-              <img src="/discount2.png" alt="Slide 3" />
+              <img
+                src="/discount2.png"
+                className={styles.image}
+                alt="Slide 3"
+              />
               <div
                 className={`absolute top-0 left-0 py-1 px-2 text-white rounded-md ${styles.discountLabel}`}
               >
@@ -99,7 +107,11 @@ const DiscountedProductSection = () => {
         <SwiperSlide>
           <div>
             <div className="relative">
-              <img src="/discount3.png" alt="Slide 3" />
+              <img
+                src="/discount3.png"
+                className={styles.image}
+                alt="Slide 3"
+              />
               <div
                 className={`absolute top-0 left-0 py-1 px-2 text-white rounded-md ${styles.discountLabel}`}
               >
@@ -118,7 +130,11 @@ const DiscountedProductSection = () => {
         <SwiperSlide>
           <div>
             <div className="relative">
-              <img src="/discount4.png" alt="Slide 3" />
+              <img
+                src="/discount4.png"
+                className={styles.image}
+                alt="Slide 3"
+              />
               <div
                 className={`absolute top-0 left-0 py-1 px-2 text-white rounded-md ${styles.discountLabel}`}
               >
@@ -137,7 +153,11 @@ const DiscountedProductSection = () => {
         <SwiperSlide>
           <div>
             <div className="relative">
-              <img src="/discount5.png" alt="Slide 3" />
+              <img
+                src="/discount5.png"
+                className={styles.image}
+                alt="Slide 3"
+              />
               <div
                 className={`absolute top-0 left-0 py-1 px-2 text-white rounded-md ${styles.discountLabel}`}
               >
@@ -156,7 +176,11 @@ const DiscountedProductSection = () => {
         <SwiperSlide>
           <div>
             <div className="relative">
-              <img src="/discount1.png" alt="Slide 3" />
+              <img
+                src="/discount1.png"
+                className={styles.image}
+                alt="Slide 3"
+              />
               <div
                 className={`absolute top-0 left-0 py-1 px-2 text-white rounded-md ${styles.discountLabel}`}
               >

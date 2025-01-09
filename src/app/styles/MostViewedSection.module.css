@@ -1,0 +1,16 @@
+.title{
+font-size: 32px;
+font-weight: 500;
+color: #2C3333;
+text-align: center;
+    padding-bottom: 25px;
+
+}
+
+.mostViewedName{
+    font-size: 15px;
+    font-weight: 400;
+    color: #2C3333;
+    text-align: center;
+    padding-top: 10px;
+}
