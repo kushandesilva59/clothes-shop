@@ -32,3 +32,20 @@ body {
 }
 
 
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 23px;
+    color: #A9ACAC !important;
+    stroke: transparent !important;
+    border-radius: 100%;
+    z-index: 99;
+    font-size: 20px !important;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after{
+  font-size: 23px !important;
+} 
+
