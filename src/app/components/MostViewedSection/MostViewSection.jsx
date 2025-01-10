@@ -20,6 +20,15 @@ const lato = Lato({
   style: ["normal", "italic"],
 });
 
+const collections = [
+  { src: "/most_view1.png", label: "Hair Dryer", price: "$25" },
+  { src: "/most_view2.png", label: "Blouse Cream Color", price: "$30" },
+  { src: "/most_view3.png", label: "Rings", price: "$200" },
+  { src: "/most_view4.png", label: "T-shirts for Men", price: "$150" },
+  { src: "/most_view5.png", label: "Wallets for Men", price: "$45" },
+  { src: "/most_view3.png", label: "Rings", price: "$60" },
+];
+
 const MostViewSection = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
@@ -54,19 +63,22 @@ const MostViewSection = () => {
           },
         }}
       >
-        <SwiperSlide>
-          <div>
+        {collections.map((item, index) => (
+          <SwiperSlide>
             <div>
-              <img src="/most_view1.png" alt="" />
-            </div>
+              <div>
+                <img src={item.src} alt="" />
+              </div>
 
-            <div>
-              <p className={`${styles.mostViewedName} ${lato.className}`}>
-                Hair Dryer
-              </p>
+              <div>
+                <p className={`${styles.mostViewedName} ${lato.className}`}>
+                 {item.label}
+                </p>
+              </div>
             </div>
-          </div>
-        </SwiperSlide>
+          </SwiperSlide>
+        ))}
+        {/*         
         <SwiperSlide>
           <div>
             <div>
@@ -131,7 +143,7 @@ const MostViewSection = () => {
               </p>
             </div>
           </div>
-        </SwiperSlide>
+        </SwiperSlide> */}
       </Swiper>
     </div>
   );

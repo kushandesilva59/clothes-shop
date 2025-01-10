@@ -9,6 +9,7 @@ import FeaturedCategoriesSection from "./components/FeaturedCategoriesSection/Fe
 import DiscountBanner from "./components/DiscountBanner/DiscountBanner";
 import DiscountedProductSection from "./components/DiscountedProductSection/DiscountedProductSection";
 import MostViewSection from "./components/MostViewedSection/MostViewSection";
+import JustForYouSection from "./components/JustForYouSection/JustForYouSection";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <DiscountBanner />
       <DiscountedProductSection />
       <MostViewSection />
+      <JustForYouSection/>
     </div>
   );
 }

@@ -1,0 +1,17 @@
+.title{
+    font-size: 32px;
+    font-weight: 500;
+    color: #2C3333;
+    text-align: center;
+}
+
+.discountLabel{
+    background-color: #2C3333;
+}
+
+.cardBottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80px;
+}

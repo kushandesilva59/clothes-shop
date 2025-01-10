@@ -35,7 +35,7 @@ const CollectionSection = () => {
         Our Collections
       </h3>
       <div
-        className={`pt-6 grid lg:grid-cols-5 lg:grid-rows-2 sm:grid-cols-3 justify-center gap-x-5 gap-y-10 ${styles.collectionSection} ${lato.className}`}
+        className={`pt-6 grid lg:grid-cols-5 lg:grid-rows-2 sm:grid-cols-3 justify-center gap-x-5 gap-y-10  ${styles.collectionSection} ${lato.className}`}
       >
         {collections.map((collection, index) => (
           <div key={index}>
