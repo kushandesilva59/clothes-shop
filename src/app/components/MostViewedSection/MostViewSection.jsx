@@ -64,7 +64,7 @@ const MostViewSection = () => {
         }}
       >
         {collections.map((item, index) => (
-          <SwiperSlide>
+          <SwiperSlide key={index}>
             <div>
               <div>
                 <img src={item.src} alt="" />

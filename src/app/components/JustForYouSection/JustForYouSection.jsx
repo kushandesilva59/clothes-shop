@@ -55,7 +55,7 @@ const JustForYouSection = () => {
         {collections.map((collection, index) => (
           <div
             key={index}
-            className={`border border-1 relative rounded-md ${inter.className}`}
+            className={`border  relative rounded-md ${inter.className}`}
           >
             <div
               className={`absolute m-3 px-2 py-1 rounded-md ${styles.discountLabel} text-white`}
