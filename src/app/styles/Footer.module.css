@@ -1,0 +1,14 @@
+.footerWrapper{
+    background-color: #F4F4F4;
+}
+
+.footerWrapper>div>div:first-child>p:first-child{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.line{
+    background-color: red;
+    height: 100px;
+    width: 1px;
+}

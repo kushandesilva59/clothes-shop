@@ -26,7 +26,7 @@ const SubscribeSection = () => {
           Get 20% off on your first order just by subscribing to our newsletter
         </h6>
 
-        <div className="flex justify-between w-1/2">
+        <div className="flex justify-around px-36 ">
           <div className={styles.inputWrapper}>
             <span className={styles.icon}>📧</span>
             <input
@@ -38,9 +38,9 @@ const SubscribeSection = () => {
           <button className={styles.button}>Subscribe</button>
         </div>
 
-        <p>
+        <p className={`text-center mt-5 ${styles.para}`}>
           You will be able to unsubscribe at any time. Read our Privacy Policy
-          here
+          <a href="" className="dark"> here</a>
         </p>
       </div>
     </div>

@@ -11,6 +11,7 @@ import DiscountedProductSection from "./components/DiscountedProductSection/Disc
 import MostViewSection from "./components/MostViewedSection/MostViewSection";
 import JustForYouSection from "./components/JustForYouSection/JustForYouSection";
 import SubscribeSection from "./components/SubscribeSection/SubscribeSection";
+import Footer from "./components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       <MostViewSection />
       <JustForYouSection/>
       <SubscribeSection/>
+      <Footer/>
     </div>
   );
 }

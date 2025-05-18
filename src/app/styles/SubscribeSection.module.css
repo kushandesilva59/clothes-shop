@@ -1,13 +1,16 @@
 .title{
     font-weight: 700;
-    font-size: 52px;
+    font-size: 36px;
     color: #2C3333;
+    padding: 0 20%;
+    margin-bottom: 15px;
 }
 
 .subTitle{
-    font-size: 30px;
+    font-size: 18px;
     font-weight: 400;
     color: #ACAFAF;
+    margin-bottom: 15px;
 }
 
 .inputWrapper{
@@ -22,6 +25,7 @@
     border-radius: 4px;
     padding: 5px;
     display: flex;
+    width: 70%;
 }
 
 .icon{
@@ -45,6 +49,15 @@
     cursor: pointer;
     font-size: 16px;
     
+}
+
+.para{
+        color: #ACAFAF;
+
+}
+
+.para a{
+    color: #2C3333;
 }
 /* 
   
