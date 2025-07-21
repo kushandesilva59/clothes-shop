@@ -16,7 +16,6 @@ const lato = Lato({
 const SubscribeSection = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 relative">
-      SubscribeSection
       <div className="flex flex-col">
         <h4 className={`text-center ${styles.title} ${lato.className}`}>
           Subscribe to our newsletter to get updates to our latest collections
