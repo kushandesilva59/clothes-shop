@@ -7,8 +7,26 @@
     font-weight: 600;
 }
 
+.footerWrapper p{
+    margin-bottom: 8px;
+    color: #2C3333;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.titlePara{
+    font-weight: 500 !important;
+    font-size: 16px !important;
+}
+
 .line{
-    background-color: red;
-    height: 100px;
+    background-color: #D8DADA;
+    height: 130px;
     width: 1px;
+}
+
+.footerBelowFollow{
+    font-size: 12px;
+    font-weight: 600;
+    color: red;
 }

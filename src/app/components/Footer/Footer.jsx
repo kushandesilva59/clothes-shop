@@ -3,8 +3,16 @@ import styles from "../../styles/Footer.module.css";
 import { Lato, Public_Sans } from "next/font/google";
 import Image from "next/image";
 import { FaStar } from "react-icons/fa";
+import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 
 import { Inter } from "next/font/google";
+
+import { Petrona, Inter } from "next/font/google";
+
+const petrona = Petrona({
+  subsets: ["latin"],
+  weight: ["400", "700"], // Customize weights
+});
 
 const inter = Inter({
   subsets: ["latin"], // Optional: Choose subsets
@@ -91,38 +99,77 @@ const Footer = () => {
     // </div>
 
     <div
-      className={` px-8 sm:px-6 lg:px-16 pt-16 relative py-10 flex flex-col ${styles.footerWrapper}`}
+      className={` px-8 sm:px-6 lg:px-16 pt-10 relative py-0 flex flex-col ${styles.footerWrapper}  ${inter.className}`}
     >
-      <div className="flex w-full justify-between h-full">
+      <div className="flex w-full justify-between h-full mb-14">
         <div>
-          <p>AISE</p>
-          <p>AISE</p>
-          <p>AISE</p>
-          <p>AISE</p>
+          <p className={`${petrona.className}`}>AISE</p>
+          <p>About AISE</p>
+          <p>Find a store</p>
+          <p>Help</p>
         </div>
+
         <div>
-          <p>AISE</p>
-          <p>AISE</p>
-          <p>AISE</p>
-          <p>AISE</p>
+          <p className={`${styles.titlePara}`}>Let Us Help You</p>
+          <p>Payment Options</p>
+          <p>Shipping Option</p>
+          <p>Payment Security</p>
         </div>
         <div className={`${styles.line}`}></div>
         <div>
-          <p>AISE</p>
-          <p>AISE</p>
-          <p>AISE</p>
-          <p>AISE</p>
+          <p className={`${styles.titlePara}`}>Customer Services</p>
+          <p>Contact Us</p>
+          <p>FAQ</p>
         </div>
         <div className={`${styles.line}`}></div>
 
         <div>
-          <p>AISE</p>
-          <p>AISE</p>
-          <p>AISE</p>
-          <p>AISE</p>
+          <p className={`${styles.titlePara}`}>Legal</p>
+          <p>Privacy Policy</p>
+          <p>Return Policy</p>
+          <p>Terms & Conditions</p>
         </div>
       </div>
-      <div>2</div>
+      <div className="flex justify-start lg:gap-96">
+        <div className="flex gap-4">
+          <div>
+            <p className={`${inter.className} ${styles.footerBelowFollow}`}>
+              Follow us
+            </p>
+          </div>
+
+          <div className="flex gap-2">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebook size={20} />
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaTwitter size={20} />
+            </a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram size={20} />
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <div className="flex">
+            <p>© AISE 2023</p>
+            <p>Privacy Policy | Terms & Conditions</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
