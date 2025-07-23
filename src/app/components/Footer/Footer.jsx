@@ -165,7 +165,7 @@ const Footer = () => {
 
         <div>
           <div className="flex">
-            <p>© AISE 2023</p>
+            <p>© Kush 2023</p>
             <p>Privacy Policy | Terms & Conditions</p>
           </div>
         </div>
